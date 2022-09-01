@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+   docomo_pra:
+      container_name: docomo_pra
+      image: docomo_pra
+      tty: true
+      build:
+         dockerfile: ./Dockerfile
+      volumes:
+         - ./PHPModule_31a:/src
+      ports:
+         - '8000:80'
