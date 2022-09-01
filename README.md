@@ -7,3 +7,5 @@
 4. docker rm コンテナID
 5. docker images
 6. docker rmi イメージID
+
+(2022/09/01時点ではdocker-composer.ymlは使用しないため手直しはしてない)
