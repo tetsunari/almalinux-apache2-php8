@@ -9,6 +9,7 @@ RUN dnf install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.n
     dnf install -y php && \
     mkdir /run/php-fpm/ && \
     yum -y install \
+    php-mcrypt \
     bind-utils \
     which   #centOSではwhichコマンドが使えないのでinstall
 
