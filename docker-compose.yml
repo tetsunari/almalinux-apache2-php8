@@ -8,6 +8,6 @@ services:
       build:
          dockerfile: ./Dockerfile
       volumes:
-         - ./PHPModule_31a:/src
+         - ./PHPModule_31a:/src/PHPModule_31a
       ports:
-         - '8000:80'
+         - '30:80'
