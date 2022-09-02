@@ -2,9 +2,9 @@
 
 ### docker コマンド
 1. docker image build -t docomo_pra .
-2. docker run --name docomo -d -p 3000:80  docomo_pra
-3. docker exec -it コンテナID bash //コンテナに入る
-4. docker rm コンテナID
+2. docker run --name docomo -d -p 30:80  docomo_pra
+3. docker exec -it docomo bash //コンテナに入る
+4. docker rm docomo
 5. docker images
 6. docker rmi イメージID
 
