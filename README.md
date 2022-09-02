@@ -5,7 +5,6 @@
 2. docker run --name docomo -d -p 30:80  docomo_pra
 3. docker exec -it docomo bash //コンテナに入る
 4. docker rm docomo
-5. docker images
-6. docker rmi イメージID
+5. docker rmi docomo_pra
 
 (2022/09/01時点ではdocker-composer.ymlは使用しないため手直しはしてない)
