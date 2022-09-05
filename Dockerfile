@@ -16,3 +16,5 @@ RUN dnf install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.n
     which   #centOSではwhichコマンドが使えないのでinstall
 
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
+
+WORKDIR /src
