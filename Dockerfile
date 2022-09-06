@@ -9,7 +9,10 @@ RUN dnf install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.n
     dnf module enable php:remi-8.0 -y && \
     dnf install -y httpd && \
     dnf install -y php && \
+    dnf -y install wget && \
+    wget https://getcomposer.org/installer -O composer-installer.php && \
     mkdir /run/php-fpm/ && \
+    php composer-installer.php --filename=composer --install-dir=/usr/local/bin && \
     yum -y install \
     php-mcrypt \
     bind-utils \
